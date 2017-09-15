@@ -4,11 +4,29 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,600|Open+Sans+Condensed:300,700" rel="stylesheet">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="hashids.min.js"></script>
 </head>
 
 <body>
-    
+    <h1>Hashids</h1>
+    <p>A live implementation of <a href="http://hashids.org/">the Hashids library</a></p>
+    <div class="shadow"></div>
+
+    <div class="box in">
+        <input id="salt" type="text" value="random salt" />
+        <input id="minhash" type="number" min="1" max="32" value="6" />
+    </div>
+    <div class="box out">
+        <input min="0" type="number" id="input" value="" />
+        <div id="output"><label for="input">enter a value...</label></div>
+    </div>
+
+    <p>
+        <b>Disclaimer:</b> I didn't make hashids. <a href="http://hashids.org/">These fine people</a> did. Also, <b>it's not secure!</b> Don't use it for passwords or other sensitive data.
+    </p>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

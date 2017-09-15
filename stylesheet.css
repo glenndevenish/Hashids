@@ -1,4 +1,52 @@
+/*
+
+Color schemes:
+
+'white': F0F2F1
+light: #E5E8E7
+Detail/headings: #437F97
+Disabled: #A6A2A2
+background: #373E49
+Errors: #FE4A49
+
+Fonts: 
+
+Open Sans Condensed
+Dosis
+
+*/
+
 body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: 0;
     padding: 0;
+    background-color: #373E49;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.box {
+    background-color: #F0F2F1;
+    border-radius: 15px;
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3% 5%;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    text-align: center;
+    color: #E5E8E7;
+}
+
+.shadow {
+    background-color: rgba(55, )
 }
